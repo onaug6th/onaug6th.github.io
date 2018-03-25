@@ -7,13 +7,109 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>onaug6th 's resume</title>
 </head>
-<!-- bootstrap样式主要依赖 -->
-<link rel="stylesheet" href="./node_modules/_bootstrap@3.3.7@bootstrap/dist/css/bootstrap.min.css">
+<!-- bootstrap主要样式 CDN依赖 -->
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- font-awesome -->
+<link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
+<style>
+    body {
+        background: black;
+    }
+
+    h2,
+    h3,
+    h4 {
+        font-weight: 100 !important;
+    }
+    li{
+        list-style: none;
+    }
+
+    .avatar {
+        height: 15em;
+        padding-top: 3em;
+    }
+
+    .avatar img {
+        width: 100%;
+    }
+
+    .my-profile {
+        background: #e2e2e2;
+    }
+
+    .profile {
+        padding-top: 3rem;
+    }
+
+    .base-info {
+        background: #f6f2f3;
+        height: 15em;
+        padding: 20px;
+    }
+
+    .my-history {
+        background: white;
+    }
+
+    .history {
+        padding: 20px;
+    }
+</style>
 
 <body>
-    <h1>雷猴</h1>
+    <!-- 页面内容 Begin -->
+    <div class="container">
+        <div class="row">
+            <!-- 左侧个人资料 Begin -->
+            <div class="my-profile col-sm-3 col-sm-offset-1">
+                <!-- 头像开始 -->
+                <div class="avatar row hide">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <img alt="140x140" class="img-circle" title="是我本人" tabindex="0" src="http://oz1y7s5ij.bkt.clouddn.com/images/avatar/5a2cdfe6a075990840ad3517.august.JPG">
+                    </div>
+                </div>
+                <!-- 头像结束 -->
+                <div class="profile">
+                    <h2>杨文杰</h2>
+                    <h4>前端开发工程师</h4>
+                    <hr>
+                </div>
+                <div class="concat">
+                    <h5>联系方式</h5>
+                    <ul>
+                        <li>
+                            <i class="fa fa-github"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 左侧个人资料 End -->
+            <!-- 右侧个人经历 Begin -->
+            <div class="my-history col-sm-7">
+                <div class="base-info row hide">
+                    <div class="col-sm-12">
+
+
+                    </div>
+                </div>
+                <div class="history row">
+                    <h4 class="forum-post-title">怎么在站内搜索内容？</h4>
+                    <p class="forum-post-meta">2017-12-17 14:20:26&nbsp;
+                        <a>onaug6th</a>
+                    </p>
+                    <p class="forum-post-simple">...</p>
+                </div>
+                <hr>
+            </div>
+            <!-- 右侧个人经历 End -->
+        </div>
+    </div>
+    <!-- 页面内容 End -->
 </body>
-<!-- bootstrap JS文件主要依赖 -->
-<script type="text/javascript" src="./node_modules/_bootstrap@3.3.7@bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- jquery CDN依赖 -->
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<!-- bootstrap 主要JS文件 CDN依赖 -->
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </html>
