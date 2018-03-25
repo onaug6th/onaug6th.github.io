@@ -21,7 +21,16 @@
     h4 {
         font-weight: 100 !important;
     }
-    li{
+
+    a {
+        text-decoration: none !important;
+    }
+
+    ul {
+        padding: 0px;
+    }
+
+    li {
         list-style: none;
     }
 
@@ -35,11 +44,12 @@
     }
 
     .my-profile {
-        background: #e2e2e2;
+        background: white;
     }
 
     .profile {
-        padding-top: 3rem;
+        padding-top: 1rem;
+        padding-bottom: 0.5rem;
     }
 
     .base-info {
@@ -54,6 +64,30 @@
 
     .history {
         padding: 20px;
+    }
+
+    .profile-link {
+        padding: 0px;
+    }
+    .profile-link span,a{
+        font-size: 12px;
+    }
+    .concat h5{
+        font-weight: bold;
+    }
+
+    .profile-link i {
+        font-size: 20px;
+    }
+
+    .profile-link li {
+        margin-bottom: 5px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .profile-link .col-sm-12 {
+        padding: 5px;
     }
 </style>
 
@@ -71,15 +105,64 @@
                 </div>
                 <!-- 头像结束 -->
                 <div class="profile">
+                    <div class="col-sm-12 text-center form-group">
+                        <img alt="140x140" style="width:145px;height:145px;" class="img-circle" title="是我本人" tabindex="0" src="http://oz1y7s5ij.bkt.clouddn.com/images/avatar/5a2cdfe6a075990840ad3517.august.JPG">
+                    </div>
                     <h2>杨文杰</h2>
                     <h4>前端开发工程师</h4>
                     <hr>
                 </div>
                 <div class="concat">
-                    <h5>联系方式</h5>
-                    <ul>
+                    <h5>教育背景</h5>
+                    <ul class="profile-link" style="padding: 0px;">
                         <li>
-                            <i class="fa fa-github"></i>
+                            <span class="col-sm-12">
+                                深圳职业技术学院 计算机应用
+                            </span>
+                        </li>
+                        <li>
+                            <span class="col-sm-12">
+                                武汉理工大学 工程管理（在读）
+                            </span>
+                        </li>
+                    </ul>
+                    <h5>联系方式</h5>
+                    <ul class="profile-link" style="padding: 0px;">
+                        <li>
+                            <span class="col-sm-12">
+                                <i class="fa fa-phone"></i> 电话
+                            </span>
+                            <a>18681477032</a>
+                        </li>
+                        <li>
+                            <span class="col-sm-12">
+                                <i class="fa fa-envelope-o"></i> 邮箱
+                            </span>
+                            <a>onaug6th@qq.com</a>
+                        </li>
+                        <li>
+                            <span class="col-sm-12">
+                                <i class="fa fa-github"></i> github
+                            </span>
+                            <a href="https://github.com/onaug6th/" target="_blank">https://github.com/onaug6th/</a>
+                        </li>
+                        <!-- <li>
+                            <span class="col-sm-12">
+                                <i class="fa fa-link"></i> 个人网站
+                            </span>
+                            <a href="http://www.onaug6th.com/" target="_blank">http://www.onaug6th.com/</a>
+                        </li>
+                        <li>
+                            <span class="col-sm-12">
+                                <i class="fa fa-book"></i> 个人博客
+                            </span>
+                            <a href="http://www.onaug6th.com/blog/default/5a2cdfe6a075990840ad3517" target="_blank">http://www.onaug6th.com/blog/default/5a2cdfe6a075990840ad3517</a>
+                        </li> -->
+                        <li>
+                            <span class="col-sm-12">
+                                <i class="fa fa-wechat"></i> 微信
+                            </span>
+                            <a>onaug6th</a>
                         </li>
                     </ul>
                 </div>
@@ -94,7 +177,7 @@
                     </div>
                 </div>
                 <div class="history row">
-                    <h4 class="forum-post-title">怎么在站内搜索内容？</h4>
+                    <h4 class="forum-post-title">项目经历</h4>
                     <p class="forum-post-meta">2017-12-17 14:20:26&nbsp;
                         <a>onaug6th</a>
                     </p>
