@@ -158,7 +158,7 @@
                     <ul class="profile-link hide" style="padding: 0px;">
                         <li>
                             <span>
-                                一年
+                                两年
                             </span>
                         </li>
                     </ul>
@@ -182,12 +182,12 @@
                             </span>
                             <a class="col-sm-3" href="https://github.com/onaug6th/" target="_blank">github.com/onaug6th/</a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <span class="col-sm-5">
                                 <i class="fa fa-child"></i> 个人网站
                             </span>
                             <a class="col-sm-3" href="http://www.onaug6th.com/" target="_blank">onaug6th.com/</a>
-                        </li>
+                        </li> -->
                         <li>
                             <span class="col-sm-5">
                                 <i class="fa fa-child"></i> 个人博客
@@ -217,7 +217,7 @@
                 <div class="skill row">
                     <h4>技能清单</h4>
                     <hr>
-                    <p>快速重构页面能力</p>
+                    <p>快速重构符合要求页面能力</p>
                     <p>前端自动化测试,测试覆盖率</p>
                     <p>angular 大型项目开发</p>
                     <p>函数式jquery插件编写</p>
@@ -235,12 +235,14 @@
                     <div class="detail">
                         <p>
                             <span class="simple-intro">
-                                招商基金预算管理系统，包含预算管理，费用预算，收入预算系统。用于电子自动化管理报销。 用户会在oa系统中进入管理会计系统，并且根据自己选择不同的报销系统处理自己的报销信息。
+                                招商基金预算管理系统，用于电子自动化报销管理。因为老旧的办公管理系统不满足于现在更加复杂的流程，而且旧系统风格感人，需要进行重新改造。
+                                用户可以在oa系统中进入管理会计系统，并且根据自己选择不同的报销系统处理自己的报销信息。
                             </span>
                         </p>
                         <p>
                             <span class="used-skill">
-                                技术选型：针对招商风格的Bootstrap定制样式，jquery，vue，jquery插件。
+                                技术选型：针对招商风格的Bootstrap定制样式，jquery，vue。
+                                负责内容：根据新界面编写流程表单样式，供多个流程使用。
                             </span>
                         </p>
                         <p>
@@ -250,7 +252,7 @@
                             因为涉及到大部分的金钱校验与千分位计算，涉及金额的计算必须要十分小心。因为JavaScript在浮点数运算时会精度丢失，导致金额不对。所以前端选择了Numeral.js这个格式和金钱计算的库来确保金钱的运算失误降低至最少。
                         </p>
                         <p>
-                            大量的数据展示，我们用到了bootstrap-table这个表格插件来做前端的数据增删改查与echrts数据化展示插件工具。同时因为插件的原有方法不满足需求，对插件（bootstrap，bootstrap-select）进行二次扩展。
+                            大量的数据展示，我们用到了bootstrap-table这个表格插件来做前端的数据增删改查与echrts数据可视化工具。同时因为插件的原有方法不满足需求，对插件（bootstrap，bootstrap-select）进行二次扩展。
                         </p>
                         <p>
                             因为费用管理系统页面涉及到大量的前端数据管理，我们选择了独立引用vue.js开发通用表格组件。通过传递各种配置（行配置，列配置，控件配置）来生成各种需求不一样的vue组件。一个报销流程中可能存在很多条明细数据，而一条明细数据中会包含大量数据（用户数据，报销详情，开发票方）。而当页面中出现多条明细时，因为双向数据绑定，每一次数据操作都会重新渲染视图。会出现明显的性能问题。
