@@ -148,7 +148,7 @@
                     <ul class="profile-link" style="padding: 0px;">
                         <li style="padding: 0px;">
                             <span class="col-sm-12" style="padding: 0px;">
-                                “正式工作一年，在招商基金做金融相关管理系统。喜欢研究编写插件或个人项目。参与过多个核心项目，项目类型涉及：基础工具、通用组件、移动平台、SPA应用（PC/M），从实习生阶段开始有简单的带人经验。喜欢阅读并记录技术文章，喜欢和团队的大家一起奋斗一起玩。有一些简单的开源项目。对前端开发、工程工具、图片处理，Node.js，有一定的经验。”
+                                “正式工作一年，在招商基金做金融相关管理系统。喜欢研究编写插件或个人项目。参与过多个核心项目，项目类型涉及：基础工具、通用组件、移动平台、SPA应用（PC/M），从实习生阶段开始有简单的带人经验。喜欢分享阅读并记录技术文章，喜欢和团队的大家一起奋斗一起玩。有一些简单的开源项目。对前端开发、工程工具、图片处理，Node.js，有一定的经验。”
                             </span>
                         </li>
                     </ul>
@@ -436,7 +436,10 @@
                         </div>
                     </div>
                     <hr>
-                    <div>
+                    <div class="text-center">
+                        <button class="btn btn-sm btn-primary" onclick="moreProject(this)">查看更多</button>
+                    </div>
+                    <div style="display: none;">
                         <h5>招商基金产品生命周期管理系统（PC端）</h5>
                         <p>2017/07 - 2017/11
                             <a style="margin-left: 5px;">前端开发</a>
@@ -489,7 +492,7 @@
                         </div>
                     </div>
                     <hr>
-                    <div>
+                    <div style="display: none;">
                         <h5>招商基金预算管理系统（PC端）</h5>
                         <p>2017/02 - 2017/07
                             <a style="margin-left: 5px;">前端开发</a>
@@ -557,6 +560,11 @@
 <script>
     function toggleDetail(that) {
         $(that).parent().next().slideToggle()
+    }
+
+    function moreProject(that){
+        $(that).hide();
+        $(that).parent().nextAll().slideDown();
     }
 </script>
 
