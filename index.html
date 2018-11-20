@@ -11,130 +11,15 @@
 <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <!-- font-awesome -->
 <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
-<style>
-    body {
-        background: black;
-    }
-
-    .padding-bottom {
-        padding-bottom: 15px;
-    }
-
-    .profile h1,
-    .profile h3 {
-        font-weight: 100 !important;
-    }
-
-    a {
-        text-decoration: none !important;
-    }
-
-    ul {
-        padding: 0px;
-    }
-
-    li {
-        list-style: none;
-    }
-
-    .avatar {
-        height: 15em;
-        padding-top: 3em;
-    }
-
-    .avatar img {
-        width: 100%;
-    }
-
-
-    .profile {
-        padding-top: 1rem;
-        padding-bottom: 0.5rem;
-    }
-
-    .history {
-        padding: 5px 20px 50px 15px
-    }
-
-    .profile-link {
-        padding: 0px;
-    }
-
-    .profile-link > li > span{
-        padding-left: 5px;
-    }
-
-    .profile-link span,
-    a {
-        font-size: 14px;
-    }
-
-    .concat h4 {
-        font-weight: bold;
-    }
-
-    .profile-link i {
-        font-size: 15px;
-    }
-
-    .profile-link li {
-        margin-bottom: 5px;
-        padding: 5px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
-    .profile-link .col-sm-12 {
-        padding: 5px;
-    }
-
-    .say-myself {
-        padding: 5px 20px;
-    }
-
-    .say-myself p {
-        font-size: 14px;
-    }
-
-    .skill {
-        padding: 5px 20px;
-    }
-
-    .skill p {
-        font-size: 14px;
-    }
-
-    .history h4 {
-        font-weight: 600;
-    }
-
-    .history p {
-        font-size: 14px;
-    }
-
-    .history .simple-intro {
-        font-size: 14px;
-        color: tomato;
-    }
-
-    .history .used-skill {
-        font-size: 14px;
-        color: #337ab7;
-    }
-
-    .total {
-        color: #555
-    }
-
-    .detail b{
-        color:red;
-    }
-</style>
+<!-- 页面样式 -->
+<link rel="stylesheet" href="./index.css">
 
 <body>
+
     <!-- 页面内容 Begin -->
     <div class="container">
-        <div class="row" style="background:white;padding-top:25px; ">
+        <div class="wrap row">
+
             <!-- 左侧个人资料 Begin -->
             <div class="my-profile col-sm-3 col-xs-12">
                 <!-- 头像开始 -->
@@ -144,45 +29,36 @@
                     </div>
                 </div>
                 <!-- 头像结束 -->
+                <!-- 资料开始 -->
                 <div class="profile">
                     <div class="col-sm-12 text-center padding-bottom hide">
-                        <img alt="140x140" style="width:145px;height:140px;" class="thumbnail" title="临时头像" tabindex="0" src="http://oz1y7s5ij.bkt.clouddn.com/images/common/resum-avatar.jpg">
+                        <img alt="140x140" style="width:145px;height:140px;" class="thumbnail" title="临时头像" tabindex="0"
+                            src="http://oz1y7s5ij.bkt.clouddn.com/images/common/resum-avatar.jpg">
                     </div>
                     <h1>杨文杰</h1>
                     <h3>前端开发工程师</h3>
                     <hr>
                 </div>
+                <!-- 资料结束 -->
+                <!-- 联系方式 -->
                 <div class="concat">
-                    <ul class="profile-link" style="padding: 0px;">
-                        <li style="padding: 0px;">
-                            <span class="col-sm-12" style="padding: 0px;">
+                    <ul class="profile-link">
+                        <li class="no-padding">
+                            <span class="col-sm-12 no-padding">
                                 “工作两年，主要从事开发金融相关管理系统。喜欢研究编写插件或开源个人项目。参与过或主导多个内部核心项目，项目类型涉及：OA平台、通用组件、移动平台、SPA应用（PC/M），从实习生阶段开始有简单的带人经验。喜欢分享并记录技术文章，喜欢和团队一起进步。对前端开发、构建工具、图片处理，Node.js，有一定的经验。”
                             </span>
                         </li>
                     </ul>
                     <h4>教育背景</h4>
-                    <ul class="profile-link" style="padding: 0px;">
+                    <ul class="profile-link">
                         <li>
                             <span class="col-sm-12">
                                 深圳职业技术学院 计算机应用
                             </span>
                         </li>
-                        <!-- <li>
-                            <span class="col-sm-12">
-                                武汉理工大学 工程管理（在读）
-                            </span>
-                        </li> -->
                     </ul>
-                    <h4 class="">出生日期</h4>
-                    <ul class="profile-link" style="padding: 0px;">
-                        <li>
-                            <span>
-                                1997/08/06
-                            </span>
-                        </li>
-                    </ul>
-                    <h4 class="">工作年限</h4>
-                    <ul class="profile-link" style="padding: 0px;">
+                    <h4>工作年限</h4>
+                    <ul class="profile-link">
                         <li>
                             <span>
                                 两年
@@ -190,7 +66,7 @@
                         </li>
                     </ul>
                     <h4>联系方式</h4>
-                    <ul class="profile-link" style="padding: 0px;">
+                    <ul class="profile-link">
                         <li>
                             <span class="col-sm-5">
                                 <i class="fa fa-phone"></i> 电话
@@ -209,93 +85,79 @@
                             </span>
                             <a class="col-sm-3" href="https://github.com/onaug6th/" target="_blank">onaug6th</a>
                         </li>
-                        <!-- <li>
-                            <span class="col-sm-5">
-                                <i class="fa fa-child"></i> 个人网站
-                            </span>
-                            <a class="col-sm-3" href="http://www.onaug6th.com/" target="_blank">onaug6th.com/</a>
-                        </li> -->
                         <li>
                             <span class="col-sm-5">
                                 <i class="fa fa-child"></i> 个人网站
                             </span>
-                            <a class="col-sm-3" href="http://www.onaug6th.com/blog/default/5a2cdfe6a075990840ad3517" target="_blank">onaug6th.com</a>
+                            <a class="col-sm-3" href="http://www.onaug6th.com/"
+                                target="_blank">onaug6th.com</a>
                         </li>
-                        <!-- <li>
-                            <span class="col-sm-5">
-                                <i class="fa fa-wechat"></i> 微信
-                            </span>
-                            <a class="col-sm-3">onaug6th</a>
-                        </li> -->
                     </ul>
                 </div>
+                <!-- 联系方式 -->
             </div>
             <!-- 左侧个人资料 End -->
+
             <!-- 右侧个人经历 Begin -->
             <div class="my-history col-sm-8 col-sm-offset-1 col-xs-12">
+
                 <div class="say-myself col-sm-6">
                     <h4>自我评价</h4>
                     <hr>
                     <p>将新知识快速转化为自己技术的学习能力</p>
                     <p>每一行代码都是对自己最高的要求</p>
-                    <p>喜欢分享，总结自己的经验</p>
+                    <p>喜欢开源分享，总结自己的经验</p>
                     <p>遇到项目瓶颈能带头攻坚</p>
                     <p>不断打磨技能，remark优化代码到极致</p>
                 </div>
+
                 <div class="skill col-sm-6">
                     <h4>技能清单</h4>
                     <hr>
-                    <p>快速重构符合规范的页面</p>
-                    <!-- <p>前端自动化测试,测试覆盖率</p> -->
-                    <p>针对使用场景灵活使用前端MVVM框架开发</p>
+                    <p>前端工程能力（webpack, glup.js），代码管理</p>
+                    <p>针对业务灵活使用前端MVVM框架开发</p>
                     <p>根据业务需求对jq插件或mvvm组件进行二次扩展</p>
-                    <p>函数式jquery插件编写</p>
-                    <p>node.js restful接口编写或中间转换层开发</p>
-                    <p>前端构建工具（webpack, glup.js），代码管理工具</p>
+                    <p>函数式Jquery插件编写</p>
+                    <p>node.js restful接口编写，中间层开发</p>
+                    <p>快速重构符合规范的HTML</p>
                     <p>图像处理能力</p>
-                    <p style="color:#7d7d7d">前端自动化测试（mocha）</p>
+                    <p class="color-gary">前端自动化测试（mocha），React</p>
                 </div>
+
                 <div class="wanna col-sm-12">
-                    <h4>我想要加入这样的团队</h4> 
+                    <h4>我想要加入这样的团队</h4>
                     <hr>
                     <p>热爱技术，而并非仅局限于谋生技能</p>
                     <p>有明确的共同目标</p>
                     <p>对产出的代码负责，有追求</p>
                     <p>成员对团队的成功负责</p>
                 </div>
+
                 <div class="history col-sm-12">
                     <h3>部分项目经历</h3>
                     <hr>
                     <div>
-                        <h4>招商基金移动APP（移动端）</h4>
-                        <p>2018/03 - 今
-                            <a style="margin-left: 5px;">前端开发</a>
+                        <h4>汇联易家后台管理系统</h4>
+                        <p>2018/08 - 今
+                            <a class="position">前端开发</a>
                         </p>
                         <div class="detail">
                             <p>
                                 <span class="simple-intro">
-                                    使用ionic3开发跨平台的移动APP，让基金从业人员拥有移动办公的能力，node.js担任数据处理中间层。
-                                    <font class="hide">原有的招商基金手机oa系统老旧，pc端上新增的办公系统与数据可视化功能在旧移动oa中实现较为困难，基金从业人员在没有电脑时不能方便查看自己的工作相关信息。</font>
-                                </span>
-                            </p>
-                            <p>
-                                <span class="simple-intro hide">
-                                    APP采用ionic3进行开发，node.js来担任数据处理中间层。开发环境使用docker进行搭建。
+                                    使用ionic3开发跨平台的移动办公APP，node.js担任数据处理中间层。
+                                    <span class="hide">原有的招商基金手机oa系统老旧，pc端上新增的办公系统与数据可视化功能在旧移动oa中实现较为困难，基金从业人员在没有电脑时不能方便查看自己的工作相关信息。</span>
                                 </span>
                             </p>
                             <p>
                                 <span class="used-skill">
-                                    ionic3，cordova，scss，express，sequelize，socket.io，mysql。
+                                    vue.js，element-ui
                                 </span>
                             </p>
                             <p>
-                                对未接触过ionic等技术的团队成员做angular和ionic培训，帮助团队快速上手。
+                                项目模块较多，且共享数据较多。根据模块进行vuex
                             </p>
-                            <p>制定项目规范，使用eslint，jsDoc等工具来规范团队。</p>
-                            <p class="hide">
-                                制订数据结构，开发规范。使用ESLint规范团队成员的代码，要求成员代码按照JSDoc规范编写。避免后期维护时出现多种风格代码。提升模块识别度方便管理。
-                            </p>
-                            <p>对原有接口进行划分，归类文档。在node层中做转发处理。</p>
+                            <p>制定项目规范，eslint，jsDoc</p>
+                            <p>对原有后端接口进行划分，归类文档。在node层中做转发处理。</p>
                             <p class="hide">
                                 对原有的java后端不同模块的接口做划分。分成（接口归类，模块，方法）归类文档。前端通过传递参数请求在node层中的转发接口。再对不同的java接口做转发。同时我也在node层中做java层返回的冗余数据做筛选处理，精简数据。
                             </p>
@@ -305,7 +167,86 @@
                             <p>
                                 制定node.js resful接口规范，统一处理返回数据与异常信息收集。
                             </p>
-                            <p>因业务需求，基于ionic提供的组件进行二次封装，编写通用性强的通用组件。</p>
+                            <p>因业务需求，基于ionic提供的组件进行二次封装，编写通用性强的全局组件。</p>
+                            <p>
+                                收集用户行为供于内部量化系统展示，定期回顾数据，根据数据结论不断优化App。
+                            </p>
+                            <p>定期和同事开总结分享会，提高团队水平。</p>
+                            <p class="hide">
+                                我在开发一些全局性组件时（组织树，通讯录，tabs切换）。遇到一些心得和技巧会记录下来分享给大家，同时将组件的使用方法与参数与事件以案例的形式写出来。方便成员快速参考使用。
+                            </p>
+                            <p class="clearfix hide">
+                                <button onclick="toggleDetail(this)" class="btn btn-sm pull-right">
+                                    <span class="glyphicon glyphicon-search">了解更多</span>
+                                </button>
+                            </p>
+                            <div class="more" style="display: none">
+                                <p>
+                                    项目开发前期，为了照顾没有node.js经验的成员。我编写简单的restful接口与sequelize数据库模型案例，让团队快速上手。
+                                </p>
+                                <p>
+                                    在app启动时统一数据请求处理，不会经常变动的数据预先储存在storage中，在超出配置的更新时间时再重新拉取。对于一些经常发生变动数据，例如基金实时状态信息，使用长链接定时请求刷新数据。以达到数据同步的效果。
+                                </p>
+                                <p>
+                                    后端开发环境（mysql，redis）使用docker进行搭建。减少搭建环境时遇到的问题与时间。从开发环境上就达到了提高开发效率的效果。
+                                </p>
+                                <p>
+                                    因为客户提了需求中提到想沿用旧有手机oa的风格，图片图标，渐变图片按钮等。经过内部讨论研究，决定不答应使用图片图标等元素。因为ionic已经提供了足够使用的图标库，如果使用了图片作为图标来使用会加大我们的app体积。还会导致风格不一致，各设备大小（iphone,android,ipad）尺寸显示不一样等情况。
+                                </p>
+                                <p>
+                                    为了让用户体验一致，我统一了ionic的默认风格为ios风格。同时也为了减少ios风格与md风格各组件之间的行为差异导致前端产生不必要的工作量。
+                                </p>
+                                <hr>
+                            </div>
+                            <p class="hide">
+                                总结：
+                            </p>
+                            <p class="total hide">
+                                该项目是我第一次参与的移动端项目开发，在开发过程中遇到了很多pc开发没有碰到过的问题。例如屏幕尺寸差异，操作系统差异，硬件差异。在这一点，cordova对于调用移动设备硬件非常方便。针对设备的功能我们会禁用掉某些功能。同时我们也做了用户习惯收集。统计用户的常用的时间段与使用的功能点，用作数据展示。方便我们了解用户习惯。
+                            </p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <h4>招商基金移动APP（移动端）</h4>
+                        <p>2018/03 - 2018/06
+                            <a class="position">前端开发</a>
+                        </p>
+                        <div class="detail">
+                            <p>
+                                <span class="simple-intro">
+                                    使用ionic3开发跨平台的移动办公APP，node.js担任数据处理中间层。
+                                    <span class="hide">原有的招商基金手机oa系统老旧，pc端上新增的办公系统与数据可视化功能在旧移动oa中实现较为困难，基金从业人员在没有电脑时不能方便查看自己的工作相关信息。</span>
+                                </span>
+                            </p>
+                            <p>
+                                <span class="simple-intro hide">
+                                    APP采用ionic3进行开发，node.js来担任数据处理中间层。开发环境使用docker进行搭建。
+                                </span>
+                            </p>
+                            <p>
+                                <span class="used-skill">
+                                    angular4，ionic3，express
+                                </span>
+                            </p>
+                            <p>
+                                对未接触过ionic等技术的团队成员做angular和ionic培训，帮助团队快速上手。
+                            </p>
+                            <p>制定项目规范，eslint，jsDoc</p>
+                            <p class="hide">
+                                制订数据结构，开发规范。使用ESLint规范团队成员的代码，要求成员代码按照JSDoc规范编写。避免后期维护时出现多种风格代码。提升模块识别度方便管理。
+                            </p>
+                            <p>对原有后端接口进行划分，归类文档。在node层中做转发处理。</p>
+                            <p class="hide">
+                                对原有的java后端不同模块的接口做划分。分成（接口归类，模块，方法）归类文档。前端通过传递参数请求在node层中的转发接口。再对不同的java接口做转发。同时我也在node层中做java层返回的冗余数据做筛选处理，精简数据。
+                            </p>
+                            <p class="hide">
+                                编写node.js restful接口，采用sequelize数据库中间件来操控数据库。
+                            </p>
+                            <p>
+                                制定node.js resful接口规范，统一处理返回数据与异常信息收集。
+                            </p>
+                            <p>因业务需求，基于ionic提供的组件进行二次封装，编写通用性强的全局组件。</p>
                             <p>
                                 收集用户行为供于内部量化系统展示，定期回顾数据，根据数据结论不断优化App。
                             </p>
@@ -348,7 +289,7 @@
                     <div class="hide">
                         <h4>融通基金产品oa系统（PC端）</h4>
                         <p>2018/02 - 2018/04
-                            <a style="margin-left: 5px;">前端开发</a>
+                            <a class="position">前端开发</a>
                         </p>
                         <div class="detail">
                             <p>
@@ -384,7 +325,8 @@
                                 oa系统上的流程，经常会出现一些大量重复的业务逻辑。例如（请求数据返回下拉列表数据，然后对某个文本框进行实例化。生成模糊搜索下拉框），也有一些很常见的方法例如（统一获取url参数，队列请求，金额转大写汉字...）我将一些常见的方法抽成一个工具类供大家方便使用，减少重复造轮子的工作。
                             </p>
                             <p class="hide">
-                                因为项目组是临时从各个地方调动过来的人组成的，大家没有合作过的经验。项目前期遇到严重的进度问题，主要是不熟悉这样的开发模式与后端提供的文档不详细。需求人员也没有描述清楚。导致团队成员间都在盲目开发，返工量特别大。 后面我加入开发时主动要求后端人员必须完善接口文档与需求文档，否则不动工。
+                                因为项目组是临时从各个地方调动过来的人组成的，大家没有合作过的经验。项目前期遇到严重的进度问题，主要是不熟悉这样的开发模式与后端提供的文档不详细。需求人员也没有描述清楚。导致团队成员间都在盲目开发，返工量特别大。
+                                后面我加入开发时主动要求后端人员必须完善接口文档与需求文档，否则不动工。
                             </p>
                             <p class="clearfix hide">
                                 <button onclick="toggleDetail(this)" class="btn btn-sm pull-right">
@@ -407,7 +349,8 @@
                                 总结：
                             </p>
                             <p class="hide">
-                                这个项目初期由我和另外两个前端负责封装好jquery插件交由融通项目组使用，后面因为融通项目组内部沟通与指挥不当。导致项目进度严重滞后，后被派到融通项目组协助才发现存在严重的沟通问题。 向上面反馈后严格管理要求后项目才像个正常的发动机运行起来。
+                                这个项目初期由我和另外两个前端负责封装好jquery插件交由融通项目组使用，后面因为融通项目组内部沟通与指挥不当。导致项目进度严重滞后，后被派到融通项目组协助才发现存在严重的沟通问题。
+                                向上面反馈后严格管理要求后项目才像个正常的发动机运行起来。
                             </p>
                             <p class="total">在开发（组织树，表格，查询区域）插件时，我借鉴了bootstrap-table这个经典的jquery插件来参考开发。插件允许传递不同参数生成不同的内容，来适应不同的应用场景。</p>
                             <p class="total">在项目开发时，后端人员是需要写些前端逻辑的。但是他们没有掌握使用一些第三方插件的方法，所以我将一些通用的插件方法例如（提示对话框，获取流程表单，遍历返回值生成select2下拉...）封装起来。</p>
@@ -419,12 +362,12 @@
                     <div>
                         <h4>招商基金场外交收平台（PC端）</h4>
                         <p>2017/10 - 2018/2
-                            <a style="margin-left: 5px;">前端开发</a>
+                            <a class="position">前端开发</a>
                         </p>
                         <div class="detail">
                             <p>
                                 <span class="simple-intro">
-                                    使用angular4开发大型单页应用，该系统整合各种交易平台的数据。为基金运营人员提供一个综合查询监控，一键式操作的平台。
+                                    angular4大型单页应用，该系统整合各种交易平台的数据。为基金运营人员提供一个综合查询监控，一键式操作的平台。
                                 </span>
                                 <span class="simple-intro hide">
                                     为了管理日渐增长的基金业务，需要一个单平台管理多业务的系统。负责各种不同基金业务的划款交收。整合各种交易平台的数据。为基金运营人员提供一个综合查询监控，一键式操作的平台。
@@ -432,14 +375,14 @@
                             </p>
                             <p>
                                 <span class="used-skill">
-                                    招商风格的bootstrap-admin，angular4，typeScript，Rxjs，Mock.js，lodash，node.js。
+                                    angular4，typeScript，Rxjs，lodash
                                 </span>
                             </p>
                             <p>
-                                负责两大模块开发，同时辅导两名实习生进行开发。与后端制定接口规范，编写通用组件与公共方法，调度各模块间联动交互。
+                                负责两大模块开发，与后端制定接口规范，编写全局组件与公共方法，调度各模块间联动交互。
                             </p>
                             <p>
-                                我参考element-ui的源码开发全局性组件（分页，tabs，对话框...)，用于全项目调用。在设计路由的时将各路由拆分为多块，以减小chunk文件加载的体积。（按需加载）。
+                                我参考element-ui源码开发全局性组件（分页，tabs，对话框...)。在设计路由的时将各路由拆分为多块，以减小chunk文件加载的体积。（按需加载）。
                             </p>
                             <p>
                                 根据项目需要与人员水平。对金额计算与日期计算数据处理等第三方库进行选型，选择比较容易上手且npm使用数量最多的（moment.js，Numeral.js，lodash.js）。
@@ -454,7 +397,8 @@
                                 我们没有使用像primeng这样的组件库，像涉及到（分页，tabs，对话框）这样的通用组件。我参考了element-ui的组件来借鉴开发。大量的对象操作逻辑处理，选择用loadsh的提供的方法来做更加便捷。
                             </p>
                             <p>
-                                项目比较紧急时，花了几天时间给两个实习生培训一下整个系统的开发流程与思路。再分配一些简单的任务，来减缓已有开发成员的压力。我安排每天上午十一点半与下午五点钟给他们解答半个小时问题， 统一安排时间来解答能减少实习生打扰我开发的次数，而且也让他们有一个思考的时间。在给他们解答的时候倾听他们的思路和讲解自己的想法。共同进步。
+                                项目比较紧急时，花了几天时间给两个实习生培训一下整个系统的开发流程与思路。再分配一些简单的任务，来减缓已有开发成员的压力。我安排每天上午十一点半与下午五点钟给他们解答半个小时问题，
+                                统一安排时间来解答能减少实习生打扰我开发的次数，而且也让他们有一个思考的时间。在给他们解答的时候倾听他们的思路和讲解自己的想法。共同进步。
                             </p>
                             <p>
                                 在进度严峻时，主动担任起团队顶梁柱，保证项目质量与进度。
@@ -475,7 +419,8 @@
                             </p>
                             <p class="total hide">
                                 这是第一个参与的大型前端项目开发，工期非常赶。因为人手不足所以要和广州的同事远程共同开发。这个时候代码约束规范和git的正确使用就起到非常重要的作用，angular的各种规规矩矩虽然写起来比较麻烦，但是这样对于开发一个大型应用起到非常好的规范作用。因为多个模块之间是有联系的，组件的方法必须要写的非常函数式。每个方法只做一件事，
-                                尽量解耦到最小。这样我们各模块间就能互相使用各自的方法。而typeScript是一份惊喜，超前的实现让我感觉非常新鲜。 同时也第一次当小师傅来带领新人，对我的表达能力与沟通能力，管理能力也有一定的锻炼。而我要学习的路还有很长。
+                                尽量解耦到最小。这样我们各模块间就能互相使用各自的方法。而typeScript是一份惊喜，超前的实现让我感觉非常新鲜。
+                                同时也第一次当小师傅来带领新人，对我的表达能力与沟通能力，管理能力也有一定的锻炼。而我要学习的路还有很长。
                             </p>
                         </div>
                     </div>
@@ -486,7 +431,7 @@
                     <div style="display: none;">
                         <h5>招商基金产品生命周期管理系统（PC端）</h5>
                         <p>2017/07 - 2017/11
-                            <a style="margin-left: 5px;">前端开发</a>
+                            <a class="position">前端开发</a>
                         </p>
                         <div class="detail">
                             <p>
@@ -510,7 +455,8 @@
                                 封装了收集数据的方法。
                             </p>
                             <p>
-                                在首次加载时只会拉取用户看见区域的数据，页面里的标签页（toogle tabs）模态框，里的内容不会进行加载或发起请求。当用户点击了某个标签页时里面内部的表单和表格才会进行实例化。达到一个（假）懒加载的效果。加快首屏加载速度提高用户体验。
+                                在首次加载时只会拉取用户看见区域的数据，页面里的标签页（toogle
+                                tabs）模态框，里的内容不会进行加载或发起请求。当用户点击了某个标签页时里面内部的表单和表格才会进行实例化。达到一个（假）懒加载的效果。加快首屏加载速度提高用户体验。
                             </p>
 
                             <p class="clearfix">
@@ -538,8 +484,8 @@
                     <hr>
                     <div>
                         <h4>招商基金预算管理系统（PC端）</h4>
-                        <p>2017/02 - 2017/08
-                            <a style="margin-left: 5px;">前端开发</a>
+                        <p>2017/02 - 2017/06
+                            <a class="position">前端开发</a>
                         </p>
                         <div class="detail">
                             <p>
@@ -587,13 +533,11 @@
                                 对不可视区域做懒加载处理，优化首屏加载速度。使用gulp来压缩合并多页应用资源文件，加快资源访问速度。
                             </p>
                             <p class="hide">
-                                在首次加载时只会拉取用户看见区域的数据，页面里的标签页（toogle tabs）模态框，里的内容不会进行加载或发起请求。当用户点击了某个标签页时里面内部的表单和表格才会进行实例化。达到一个（假）懒加载的效果。加快首屏加载速度提高用户体验。
+                                在首次加载时只会拉取用户看见区域的数据，页面里的标签页（toogle
+                                tabs）模态框，里的内容不会进行加载或发起请求。当用户点击了某个标签页时里面内部的表单和表格才会进行实例化。达到一个（假）懒加载的效果。加快首屏加载速度提高用户体验。
                             </p>
                             <p>
                                 部分内容涉及到的大量数据管理联动，我选择了独立引用vue.js开发通用明细表组件。通过传递配置（行配置，列配置，控件配置）来生成各种功能不同的vue组件。但流程页面中存在多个明细表，同时数据间有联动效果。双向绑定导致DOM频繁刷新带来性能问题，后面选择使用前端分页避免性能上带来的问题。
-                            </p>
-                            <p class="hide">
-                                
                             </p>
                             <p class="hide">
                                 部分功能有大量数据管理联动，我选择独立引用vue.js开发通用表单组件。通过传递配置（行，列，控件）来生成各种需求不一样的vue组件。报销流程存在很多条明细数据，明细数据中会包含大量数据（用户数据，报销详情，开票方信息），而且金额也有联动关系。页面中双向数据绑定数据多时，每一次数据操作都会重新渲染视图。会出现明显的性能问题。
@@ -624,32 +568,24 @@
                 </div>
             </div>
             <!-- 右侧个人经历 End -->
+
+            <!-- 底部艺术家 -->
             <div class="col-sm-12 text-center">
-                <h4 style="font-weight: 100 !important;margin-bottom: 20px;">我们应该也是艺术家，只不过我们的材料是每一句的代码。</h4>
+                <h4 class="art">我们应该也是艺术家，只不过我们的材料是每一句的代码。</h4>
             </div>
+            <!-- 底部艺术家 -->
+
         </div>
     </div>
     <!-- 页面内容 End -->
+
 </body>
+
 <!-- jquery CDN依赖 -->
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 <!-- bootstrap 主要JS文件 CDN依赖 -->
 <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script>
-    /*
-     * @param {object} that 点击的元素
-     */
-    function toggleDetail(that) {
-        $(that).parent().next().slideToggle()
-    }
-
-    /*
-     * @param {object} that 点击的元素
-     */
-    function moreProject(that) {
-        $(that).hide();
-        $(that).parent().nextAll().slideDown();
-    }
-</script>
+<!-- 页面逻辑 -->
+<script src="./index.js"></script>
 
 </html>

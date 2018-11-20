@@ -1,0 +1,137 @@
+body {
+    background: black;
+}
+
+.wrap{
+    background:white;
+    padding-top:25px;
+}
+
+.color-gary{
+    color:#7d7d7d
+}
+
+.no-padding{
+    padding: 0px;
+}
+
+.padding-bottom {
+    padding-bottom: 15px;
+}
+
+.profile h1,
+.profile h3 {
+    font-weight: 100 !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+a.position{
+    margin-left: 5px;
+}
+
+ul {
+    padding: 0px;
+}
+
+li {
+    list-style: none;
+}
+
+.avatar {
+    height: 15em;
+    padding-top: 3em;
+}
+
+.avatar img {
+    width: 100%;
+}
+
+.profile {
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.history {
+    padding: 5px 20px 50px 15px
+}
+
+.profile-link {
+    padding: 0px;
+}
+
+.profile-link>li>span {
+    padding-left: 5px;
+}
+
+.profile-link span,
+a {
+    font-size: 14px;
+}
+
+.concat h4 {
+    font-weight: bold;
+}
+
+.profile-link i {
+    font-size: 15px;
+}
+
+.profile-link li {
+    margin-bottom: 5px;
+    padding: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.profile-link .col-sm-12 {
+    padding: 5px;
+}
+
+.say-myself {
+    padding: 5px 20px;
+}
+
+.say-myself p {
+    font-size: 14px;
+}
+
+.skill {
+    padding: 5px 20px;
+}
+
+.skill p {
+    font-size: 14px;
+}
+
+.history h4 {
+    font-weight: 600;
+}
+
+.history p {
+    font-size: 14px;
+}
+
+.history .simple-intro {
+    font-size: 14px;
+    color: tomato;
+}
+
+.history .used-skill {
+    font-size: 14px;
+    color: #337ab7;
+}
+
+.total {
+    color: #555
+}
+
+.detail b {
+    color: red;
+}
+
+h4.art{
+    font-weight: 100 !important;margin-bottom: 20px;
+}
